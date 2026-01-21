@@ -9,6 +9,8 @@
 </head>
 <body>
 
+  <audio src="https://www.bensound.com/bensound-music/bensound-love.mp3" id="myAudio" loop></audio>
+
     <div class="bg-hearts" id="bgHearts"></div>
 
     <div class="wrapper">
@@ -38,6 +40,12 @@
     </div>
 
     <script>
+
+        function openSurat() {
+        envelope.classList.add('open');
+        document.getElementById('myAudio').play();
+        }
+
         const envelope = document.getElementById('envelope');
 
         function openSurat() {
